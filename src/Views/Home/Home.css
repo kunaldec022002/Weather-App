@@ -4,6 +4,7 @@ body
 }
 .app-title
 {
+    
     text-align: center;
 }
 
@@ -12,11 +13,12 @@ body
    
     display: block;
     margin: 10px  auto;
-    width: 50%;
+    width: 60%;
     padding: 15px;
     font-size: 20px;
     border-radius: 10px;
     color: red;
+    text-align: center;
 
 }
 
@@ -30,4 +32,22 @@ body
 {
     text-align: center;
     color: darkred;
+}
+
+.container
+{
+    
+    height: 320px;
+    width: 350px;
+    margin: 0 auto;
+    background-color: #00ffbf;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px 3px black;
+    
+}
+
+.Child
+{
+    margin-top: 60px;
+    padding: 10px;
 }

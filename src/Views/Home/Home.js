@@ -5,7 +5,7 @@ import axios, { Axios } from "axios";
 function Home()
 {
 
-    const [city, setcity] =useState('Pune')
+    const [city, setcity] =useState('')
     const [temperature,settemperature] = useState('0')
     const [Message,setMessage] = useState('')
 
@@ -16,7 +16,7 @@ function Home()
             const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f652964084c552e8c0492237a3fabd9c`)
         
             settemperature((response.data.main.temp-273).toFixed(2))
-            setMessage("✅ Data Fetch Sucessfully ...")
+            setMessage("✅ Data Fetch Sucessfully 😍...")
 
         }
 
@@ -36,8 +36,9 @@ function Home()
 
 
     return(
-        <div>
-            <h1 className="app-title">Weather App {city}</h1>
+        <div className="container">
+            <div className="Child">
+            <h1 className="app-title">Weather App </h1>
 
             <
                 input className="search-bar" 
@@ -50,10 +51,14 @@ function Home()
 
             />
 
-            <h1 className="temperature-text">Temperature:{temperature} °C</h1>
+            <h1 className="temperature-text">Temperature:{temperature}°C</h1>
 
+            
             <p className="messege-text">{Message}</p>
+
+            </div>
         </div>
+
     )
 }
 
