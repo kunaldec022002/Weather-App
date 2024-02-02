@@ -1,7 +1,4 @@
-body
-{
-    background-color: #00ffbf;
-}
+
 .app-title
 {
     
@@ -43,7 +40,7 @@ body
     background-color: #00ffbf;
     border-radius: 15px;
     box-shadow: 3px 3px 7px 3px black;
-    
+ 
 }
 
 .Child
