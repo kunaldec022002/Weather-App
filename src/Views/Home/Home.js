@@ -52,6 +52,8 @@ function Home()
             <p className="messege-text">{Message}</p>
 
             </div>
+
+         
         </div>
 
     )
